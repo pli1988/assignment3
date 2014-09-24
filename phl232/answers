@@ -1,0 +1,33 @@
+1. 	In [1]: inspect.getfile(os.path.abspath)
+	Out[1]: '/usr/lib/python2.7/posixpath.py'
+	
+2.	In [2]: num = !ls -a | wc -w
+
+3.	In [3]: math.sqrt(int(num[0]))
+	Out[3]: 15.716233645501712
+
+4. 	x*x is fastest
+
+	In [4]: x = 12345
+
+	In [5]: %timeit x**2
+	10000000 loops, best of 3: 62.7 ns per loop
+
+	In [6]: %timeit x*x
+	10000000 loops, best of 3: 48.2 ns per loop
+	
+	In [7]: %timeit np.square(x)
+	1000000 loops, best of 3: 874 ns per loop
+	
+5.	25
+
+	In [5]: %lsmagic
+	Out[5]: 
+	Available line magics:
+	%alias  %alias_magic  %autocall  %autoindent  %automagic  %bookmark  %cat  %cd  %clear  %colors  %config  %cp  %cpaste  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %install_default_config  %install_ext  %install_profiles  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %paste  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+	
+	Available cell magics:
+	%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+	
+	Automagic is ON, % prefix IS NOT needed for line magics.
+ 
